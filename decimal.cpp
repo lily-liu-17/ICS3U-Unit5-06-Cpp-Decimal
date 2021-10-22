@@ -9,7 +9,7 @@
 #include <iomanip>
 #include <string>
 
-float RoundNumber(float number, int decimal) {
+void RoundNumber(float &number, int decimal) {
     number = number * pow(10, decimal) + 0.5;
     number = static_cast<int>(number);
     number = number / pow(10, decimal);
